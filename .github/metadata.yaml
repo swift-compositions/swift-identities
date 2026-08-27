@@ -2,7 +2,7 @@
 # Triaged by AI-assisted bulk pass (2026-04-29).
 description: "Domain-tagged, type-safe identifiers built on RFC 9562 UUIDs for Swift."
 topics:
-  - foundations
+  - compositions
   - identities
 homepage: "https://swift-institute.org"
 readme:

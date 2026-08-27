@@ -49,7 +49,7 @@ Add swift-identities to your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/swift-foundations/swift-identities.git", branch: "main")
+    .package(url: "https://github.com/swift-compositions/swift-identities.git", branch: "main")
 ]
 ```
 
@@ -78,7 +78,7 @@ Add the product to your target:
 - **Typed throws end-to-end** — `random()` throws `Random.Error`; no `any Error` escapes the API surface
 - **Standard conformances** — identifiers are `Equatable` and `Hashable`, so they work directly as `Set` members and `Dictionary` keys
 
-Importing `Identities` also re-exports the underlying `Tagged_Primitives` and `UUIDs` modules, so their full surfaces (including `Tagged` itself and the RFC 9562 UUID API) are available without additional imports.
+Importing `Identities` also re-exports the underlying `Tagged` and `UUIDs` modules, so their full surfaces (including `Tagged` itself and the RFC 9562 UUID API) are available without additional imports.
 
 ---
 
@@ -86,8 +86,8 @@ Importing `Identities` also re-exports the underlying `Tagged_Primitives` and `U
 
 ### Dependencies
 
-- [swift-tagged-primitives](https://github.com/swift-primitives/swift-tagged-primitives) — Phantom-typed `Tagged<Tag, RawValue>` wrapper backing `Identity.ID`.
-- swift-uuids (private, unreleased) — RFC 9562 / RFC 4122 UUID implementation backing `Identity.UUID`.
+- [swift-tagged](https://github.com/swift-molecules/swift-tagged) — Phantom-typed `Tagged<Tag, RawValue>` wrapper backing `Identity.ID`.
+- [swift-uuids](https://github.com/swift-compositions/swift-uuids) — RFC 9562 / RFC 4122 UUID implementation backing `Identity.UUID`.
 
 ---
 
