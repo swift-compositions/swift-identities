@@ -75,7 +75,7 @@ extension `Identity.ID Tests`.Unit {
 
 // MARK: - Edge Cases
 
-extension `Identity.ID Tests`.EdgeCase {
+extension `Identity.ID Tests`.`Edge Case` {
     @Test
     func `ID with integer raw value`() {
         typealias IntID = Identity.ID<User, Int>

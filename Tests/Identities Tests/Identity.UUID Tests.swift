@@ -66,7 +66,7 @@ extension Identity.UUID.Test.Unit {
 
 // MARK: - Edge Cases
 
-extension Identity.UUID.Test.EdgeCase {
+extension Identity.UUID.Test.`Edge Case` {
     @Test
     func `random() generates 1000 unique UUIDs`() throws {
         var set = Set<Identity.UUID>()
