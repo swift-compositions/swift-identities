@@ -11,8 +11,8 @@ import Testing
 @testable import Identities
 
 extension Identity.UUID.Test.Performance {
-  @Test( .timed(iterations: 100, warmup: 10)
-  func `Random() generation`() throws {
-    _ = try Identity.UUID.random()
-  }
+    @Test(.timed(iterations: 100, warmup: 10))
+    func `Random() generation`() throws {
+        _ = try Identity.UUID.random()
+    }
 }
