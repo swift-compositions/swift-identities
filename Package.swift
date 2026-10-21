@@ -19,20 +19,20 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/swift-atoms/swift-tagged.git", branch: "main"),
-        .package(url: "https://github.com/swift-compositions/swift-uuids.git", branch: "main")
+        .package(url: "https://github.com/swift-compositions/swift-uuids.git", branch: "main"),
     ],
     targets: [
         .target(
             name: "Identities",
             dependencies: [
                 .product(name: "Tagged", package: "swift-tagged"),
-                .product(name: "UUIDs", package: "swift-uuids")
+                .product(name: "UUIDs", package: "swift-uuids"),
             ]
         ),
         .testTarget(
             name: "Identities Tests",
             dependencies: [
-                "Identities",
+                "Identities"
             ]
         ),
     ],
